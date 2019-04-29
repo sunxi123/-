@@ -1,0 +1,109 @@
+<!--logs.wxml-->
+<view class="myWeChat">
+  <view wx:if="{{Menu}}" class="swiper-container">
+
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+
+      <block wx:for="{{array}}" wx:key="unique">
+
+        <swiper-item>
+
+          <image src="{{item.src}}" mode="aspectFit" class="img" bindtap="swipclick" />       </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view wx:if="{{Menu}}" class='Menu homepage'>
+    <view class='text'>
+      <text bindtap="goList" data-text='女性专区' data-currentimg="女性专区">女性专区</text>
+      <view>
+        <view>
+          女性专区1
+        </view>
+        <view>
+          女性专区2
+        </view>
+        <view>
+          女性专区3
+        </view>
+      </view>
+    </view>
+    <view class='text'>
+      <text bindtap="goList" data-text='安全干货' data-currentimg="安全干货" >安全干货</text>
+      <view>
+        <view>
+          女性专区1
+        </view>
+        <view>
+          女性专区2
+        </view>
+        <view>
+          女性专区3
+        </view>
+      </view>
+    </view>
+    <view class='text'>
+      <text bindtap="goList"  data-text='防骗日记' data-currentimg="防骗日记" >防骗日记</text>
+      <view>
+        <view>
+          女性专区1
+        </view>
+        <view>
+          女性专区2
+        </view>
+        <view>
+          女性专区3
+        </view>
+      </view>
+    </view>
+    <view class='text'>
+      <text bindtap="goList"  data-text='每日安全' data-currentimg="每日安全" >每日安全</text>
+      <view>
+        <view>
+          女性专区1
+        </view>
+        <view>
+          女性专区2
+        </view>
+        <view>
+          女性专区3
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{MyInfo}}" class='Menu MyInfo'>
+    <view class='myinfoBox'>
+      <image src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class='icon' bindtap="goList" >
+      <text>备忘录</text>
+      <icon>></icon>
+    </view>
+    <view class='icon'>
+      <text>行程</text>
+      <icon>></icon>
+    </view>
+    <view class='icon'>
+      <text>一键报警</text>
+      <icon>></icon>
+    </view>
+    <view class='text'>
+      <text bindtap="goList" data-text='我的文章' data-currentimg="我的文章">我的文章</text>
+      <view>
+        <view>
+          女性专区1
+        </view>
+        <view>
+          女性专区2
+        </view>
+        <view>
+          女性专区3
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='footer'>
+    <view bindtap="getMenu">首页 </view>
+    <view bindtap="getMyInfo"> 我的 </view>
+  </view>
+</view>

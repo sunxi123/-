@@ -1,0 +1,95 @@
+
+/* 轮播图 */
+.swiper-container{
+  position: relative;
+  height: 400rpx;
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+.swiper-container .swiper{
+  height: 400rpx;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+swiper-item{
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.swiper-container .swiper .img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* 内容 */
+text{
+  display: block;
+}
+.myWeChat>view.Menu{
+  width: 90%;
+  margin: 0 auto;
+}
+.myWeChat>view.Menu>view.text{
+  width: 100%;
+  border: 1px solid #999;
+  height: 300rpx;
+  margin: 0 auto 50rpx;
+}
+.myWeChat>view.homepage>view.text:last-child{
+  margin-bottom: 150rpx
+}
+.myWeChat>view.Menu>view.text>text{
+  border-bottom: 1px solid #999;
+  padding-left: 20rpx;
+  line-height: 80rpx;
+  width: 100%;
+  box-sizing: border-box
+}
+.myWeChat>view.Menu>view.text>view>view{
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 10rpx 10rpx;
+  border-bottom: 1px solid #eee;
+}
+.myWeChat>view.Menu>view.text>view>view:last-child{
+  border-bottom: none;
+}
+.MyInfo>.icon{
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40rpx;
+  padding: 0 20rpx;
+  height: 80rpx;
+  box-sizing: border-box;
+}
+.MyInfo>.icon>text{
+  float: left;
+  line-height: 80rpx;
+  font-size: 35rpx;
+}
+.MyInfo>.icon>icon{
+  float: right;
+  line-height: 80rpx;
+  color: #ccc;
+  font-size: 50rpx;
+}
+.myinfoBox{
+  width: 100%;
+  height: 180rpx;
+}
+.myinfoBox>image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+.myinfoBox>text{
+  line-height: 150rpx;
+  font-size: 50rpx;
+  color: #666;
+}
