@@ -18,7 +18,7 @@ Page({
       { src: '../img/img2.jpg' },
       { src: '../img/img3.jpg' },
       { src: '../img/img4.jpg' }
-    ]
+    ],
   },
   //事件处理函数
   getMenu: function () {
@@ -81,9 +81,9 @@ Page({
     }
   },
   goList: function(evevt) {
-    console.log(evevt)
+    console.log(evevt.target.dataset.text)
       wx.navigateTo({
-        url: '../list/list'
+        url: '../text/' + evevt.target.dataset.text + '/' + evevt.target.dataset.text
       })
     },
 })
